@@ -2,13 +2,13 @@
 Super duper minimal php web framework!
 
 ## Usage
-`Router::view('viewname')`  
+`Router::view('/path/u/want', 'viewname')`  
 Load view with name 'viewname.html' in *Views*-directory.
 
-`Router::json($object)`  
+`Router::json('/dog/such/wow', $object)`  
 Load json representation of `$object`.
 
-`Router::text('Hello world')`  
+`Router::text('/wow/such/no/html', 'Hello world')`  
 Load pure text, strips html tags.
 
 `Router::render()`  
