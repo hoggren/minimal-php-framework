@@ -20,6 +20,11 @@ class Result
         $this->page = strip_tags($text);
     }
 
+    public function run($sh, $showResult = false) {
+        $result = shell_exec($sh);
+        echo $showResult ? $result : '';
+    }
+
     public function render() {
         echo $this->page;
     }

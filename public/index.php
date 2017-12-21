@@ -17,5 +17,9 @@ Router::get('/html', function ($result) {
     $result->view('test');
 });
 
+Router::get('/run', function ($result) {
+    $result->run('uptime', true);
+});
+
 
 Router::render();
